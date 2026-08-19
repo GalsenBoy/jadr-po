@@ -1,0 +1,238 @@
+<!doctype html>
+<!--
+  Page d'assistance publique de Jadr — à copier telle quelle dans le dépôt
+  `jadr-po` sous le nom `support.html`, puis à déclarer comme URL d'assistance
+  dans App Store Connect et dans la Play Console.
+
+  Le texte fait foi dans `SUPPORT.md` : modifier là-bas d'abord, reporter ici.
+  Page autonome, sans dépendance externe (ni police, ni script, ni feuille de
+  style distante) pour qu'elle s'affiche même si GitHub Pages est seul en ligne.
+-->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aide et contact — Jadr</title>
+    <meta
+      name="description"
+      content="Assistance de l'application Jadr : contact, questions fréquentes et signalement d'erreurs."
+    />
+    <style>
+      :root {
+        --text: #132a1f;
+        --text-secondary: #6b7c73;
+        --background: #faf7f2;
+        --surface: #ffffff;
+        --border: #e9e1d4;
+        --tint: #0f5132;
+        --tint-soft: #e2ede7;
+        --gold: #a8801a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #f3f0e9;
+          --text-secondary: #95a49b;
+          --background: #0b120e;
+          --surface: #141e18;
+          --border: #233029;
+          --tint: #4fbf87;
+          --tint-soft: #152b21;
+          --gold: #e3c158;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 2.5rem 1.25rem 4rem;
+        background: var(--background);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin: 0 0 0.5rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 2.5rem 0 0.75rem;
+        color: var(--tint);
+      }
+      h3 {
+        font-size: 1rem;
+        margin: 1.75rem 0 0.35rem;
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+      ul {
+        margin: 0 0 1rem;
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 0.35rem;
+      }
+      .lede {
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+      }
+      .contact {
+        background: var(--tint-soft);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.25rem 1.35rem;
+        margin: 0 0 1.5rem;
+      }
+      .contact p:last-child {
+        margin-bottom: 0;
+      }
+      .contact a {
+        font-size: 1.15rem;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+      }
+      a {
+        color: var(--tint);
+      }
+      .faq h3 {
+        color: var(--text);
+      }
+      .faq p {
+        color: var(--text-secondary);
+      }
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+      }
+      .rule {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 2.5rem 0 0;
+      }
+      .gold {
+        color: var(--gold);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Aide et contact <span class="gold">— Jadr</span></h1>
+      <p class="lede">
+        Jadr est une application gratuite d'apprentissage du vocabulaire arabe du Coran, en
+        français, qui fonctionne entièrement hors ligne.
+      </p>
+
+      <h2>Nous écrire</h2>
+      <div class="contact">
+        <p>
+          Pour toute question, tout problème technique, toute erreur repérée dans un mot ou une
+          traduction, toute suggestion :
+        </p>
+        <p><a href="mailto:bilaly.cissokho21@gmail.com">bilaly.cissokho21@gmail.com</a></p>
+        <p>
+          Écrivez en français ou en anglais. Les messages reçoivent une réponse sous 72 heures en
+          général.
+        </p>
+      </div>
+      <p>Pour qu'un problème technique soit traitable du premier coup, indiquez si possible :</p>
+      <ul>
+        <li>le modèle de votre téléphone et la version d'iOS ou d'Android ;</li>
+        <li>la version de Jadr (Réglages → tout en bas de l'écran) ;</li>
+        <li>
+          l'écran concerné et ce qui s'est passé, une capture d'écran valant mieux qu'une
+          description.
+        </li>
+      </ul>
+
+      <h2>Signaler une erreur de vocabulaire</h2>
+      <p>
+        C'est le message le plus utile que nous puissions recevoir. Si une traduction, une
+        translittération, une racine ou une vocalisation vous paraît fausse, écrivez-nous avec le
+        mot concerné et ce qui vous semble juste. Ces signalements sont relus et corrigés dans une
+        mise à jour.
+      </p>
+
+      <h2>Questions fréquentes</h2>
+      <div class="faq">
+        <h3>L'application est-elle vraiment gratuite ?</h3>
+        <p>
+          Oui, entièrement. Les 300 mots, les 6 paliers, les quiz et les prononciations sont
+          accessibles dès l'installation. Il n'y a ni publicité, ni abonnement, ni achat intégré. Un
+          soutien libre par don est proposé dans les Réglages : il est facultatif et ne débloque
+          rien.
+        </p>
+
+        <h3>Faut-il un compte ou une connexion Internet ?</h3>
+        <p>
+          Ni l'un ni l'autre. Il n'y a pas de compte à créer, et tout le contenu est embarqué dans
+          l'application : elle fonctionne en mode avion.
+        </p>
+
+        <h3>Où est enregistrée ma progression ? Est-elle synchronisée ?</h3>
+        <p>
+          Uniquement dans la mémoire de votre téléphone, et elle n'est pas synchronisée. En
+          conséquence : elle ne se retrouve pas sur un second appareil, et désinstaller
+          l'application l'efface définitivement. La synchronisation entre appareils est envisagée
+          pour une version future.
+        </p>
+
+        <h3>Je n'entends pas la prononciation.</h3>
+        <p>
+          Vérifiez d'abord le volume et le mode silencieux. Si le son reste absent, dites-le nous en
+          précisant le mot : les enregistrements sont livrés avec l'application, un mot muet est
+          donc un défaut de notre côté, pas un problème de réseau.
+        </p>
+
+        <h3>Le rappel quotidien ne se déclenche pas.</h3>
+        <p>
+          Il faut que les notifications soient autorisées pour Jadr dans les réglages du téléphone
+          (Réglages iOS ou Android → Notifications → Jadr). L'heure du rappel se change dans
+          Réglages → Rappel quotidien.
+        </p>
+
+        <h3>Un mot que je maîtrisais est revenu.</h3>
+        <p>
+          C'est voulu. Jadr utilise la répétition espacée : un mot revient à intervalles de plus en
+          plus longs, et une réponse hésitante le ramène plus tôt. C'est ce qui ancre le vocabulaire
+          dans la durée.
+        </p>
+
+        <h3>Comment recommencer à zéro ?</h3>
+        <p>Réglages → Effacer ma progression. L'action est immédiate et irréversible.</p>
+
+        <h3>L'écriture arabe est trop petite / je veux masquer les harakat.</h3>
+        <p>
+          Les Réglages permettent d'afficher ou non la translittération et les harakat. Pour la
+          taille du texte, Jadr suit le réglage d'accessibilité du système (iOS : Réglages →
+          Affichage et luminosité → Taille du texte).
+        </p>
+
+        <h3>Puis-je proposer un mot, un thème ou une fonction ?</h3>
+        <p>Oui, écrivez-nous. Les demandes reçues orientent réellement les mises à jour.</p>
+      </div>
+
+      <hr class="rule" />
+      <footer>
+        <p>
+          Jadr ne collecte aucune donnée personnelle. La
+          <a href="https://galsenboy.github.io/jadr-po/">politique de confidentialité</a> est
+          publiée séparément.
+        </p>
+        <p>Dernière mise à jour : 19 août 2026.</p>
+      </footer>
+    </main>
+  </body>
+</html>
