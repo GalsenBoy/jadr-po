@@ -1,185 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  Politique de confidentialité publique de Jadr — à copier telle quelle dans le
+  dépôt `jadr-po` sous le nom `index.html`, puis à déclarer comme URL de
+  politique de confidentialité dans App Store Connect et dans la Play Console.
+
+  Le texte fait foi dans `PRIVACY.md` : modifier là-bas d'abord, reporter ici.
+  L'annexe « pour la publication » de `PRIVACY.md` s'arrête au dépôt et ne
+  figure PAS ici — c'est le défaut de la page actuellement en ligne, qui expose
+  au lecteur des consignes de soumission qui ne le concernent pas.
+
+  Page autonome, sans dépendance externe (ni police, ni script, ni feuille de
+  style distante) pour qu'elle s'affiche même si GitHub Pages est seul en ligne.
+-->
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Politique de confidentialité de Jadr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Politique de confidentialité — Jadr</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Politique de confidentialité — Jadr</h1>
-        <p class="last-updated">Dernière mise à jour : 17 août 2026</p>
-    </header>
-
+    <meta
+      name="description"
+      content="Politique de confidentialité de l'application Jadr : aucune donnée personnelle collectée, aucun serveur, tout reste sur votre appareil."
+    />
+    <style>
+      :root {
+        --text: #132a1f;
+        --text-secondary: #6b7c73;
+        --background: #faf7f2;
+        --surface: #ffffff;
+        --border: #e9e1d4;
+        --tint: #0f5132;
+        --tint-soft: #e2ede7;
+        --gold: #a8801a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #f3f0e9;
+          --text-secondary: #95a49b;
+          --background: #0b120e;
+          --surface: #141e18;
+          --border: #233029;
+          --tint: #4fbf87;
+          --tint-soft: #152b21;
+          --gold: #e3c158;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 2.5rem 1.25rem 4rem;
+        background: var(--background);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin: 0 0 0.5rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 2.5rem 0 0.75rem;
+        color: var(--tint);
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+      ul {
+        margin: 0 0 1rem;
+        padding-left: 1.25rem;
+      }
+      li {
+        margin-bottom: 0.35rem;
+      }
+      .date {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin-bottom: 1.75rem;
+      }
+      .lede {
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+      }
+      .none {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--gold);
+        margin-bottom: 1rem;
+      }
+      .callout {
+        background: var(--tint-soft);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.25rem 1.35rem;
+        margin: 0 0 1.5rem;
+      }
+      .callout p:last-child,
+      .callout ul:last-child {
+        margin-bottom: 0;
+      }
+      .callout a {
+        font-size: 1.15rem;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+      }
+      a {
+        color: var(--tint);
+      }
+      footer {
+        margin-top: 3rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+      }
+      .rule {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 2.5rem 0 0;
+      }
+      .gold {
+        color: var(--gold);
+      }
+    </style>
+  </head>
+  <body>
     <main>
-        <section class="intro">
-            <p>Jadr est une application d'apprentissage du vocabulaire arabe coranique. Elle fonctionne <strong>entièrement hors ligne</strong> : elle ne crée pas de compte, ne se connecte à aucun serveur, et n'envoie aucune donnée nulle part.</p>
-            <p>Ce document dit ce que l'application fait de vos données. Il est court parce qu'il n'y a presque rien à dire, et c'est délibéré.</p>
-        </section>
+      <h1>Politique de confidentialité <span class="gold">— Jadr</span></h1>
+      <p class="date">Dernière mise à jour : 17 août 2026</p>
 
-        <section id="data-collection">
-            <h2>1. Les données que nous collectons</h2>
-            <p><strong>Aucune.</strong></p>
-            <p>Nous ne collectons, ne transmettons, ne vendons et ne partageons aucune donnée personnelle. Nous ne savons pas qui vous êtes, ni même que vous utilisez l'application. Il n'y a pas de compte, pas d'inscription, pas d'adresse e-mail demandée, pas d'identifiant publicitaire, pas de traceur, pas de mesure d'audience, et aucun outil d'analyse tiers.</p>
-        </section>
+      <p class="lede">
+        Jadr est une application d'apprentissage du vocabulaire arabe coranique. Elle fonctionne
+        <strong>entièrement hors ligne</strong> : elle ne crée pas de compte, ne se connecte à aucun
+        serveur, et n'envoie aucune donnée nulle part. Ce document dit ce que l'application fait de
+        vos données. Il est court parce qu'il n'y a presque rien à dire, et c'est délibéré.
+      </p>
 
-        <section id="device-storage">
-            <h2>2. Les données que l'application enregistre sur votre appareil</h2>
-            <p>L'application a besoin de se souvenir de votre progression pour fonctionner. Elle enregistre donc, <strong>uniquement dans la mémoire de votre téléphone</strong> :</p>
-            <ul>
-                <li>votre avancement mot par mot (nombre de révisions, date de la prochaine révision, statut « en cours » / « maîtrisé » / « à revoir »)</li>
-                <li>vos réglages (taille des sessions, affichage de la translittération et des harakat, apparence claire ou sombre, objectif quotidien, heure du rappel)</li>
-                <li>vos points d'expérience, votre série de jours consécutifs, et la date de la dernière invitation à noter l'application</li>
-            </ul>
-            <p>Ces informations ne quittent jamais votre appareil. Elles ne transitent par aucun serveur, y compris le nôtre — nous n'en avons pas.</p>
-            <p><strong>Deux conséquences à connaître :</strong></p>
-            <ul>
-                <li>Si vous désinstallez l'application, ces données sont effacées avec elle et <strong>ne peuvent pas être récupérées</strong></li>
-            </ul>
-        </section>
+      <h2>1. Les données que nous collectons</h2>
+      <p class="none">Aucune.</p>
+      <p>
+        Nous ne collectons, ne transmettons, ne vendons et ne partageons aucune donnée personnelle.
+        Nous ne savons pas qui vous êtes, ni même que vous utilisez l'application. Il n'y a pas de
+        compte, pas d'inscription, pas d'adresse e-mail demandée, pas d'identifiant publicitaire,
+        pas de traceur, pas de mesure d'audience, et aucun outil d'analyse tiers.
+      </p>
+
+      <h2>2. Les données que l'application enregistre sur votre appareil</h2>
+      <p>
+        L'application a besoin de se souvenir de votre progression pour fonctionner. Elle enregistre
+        donc, <strong>uniquement dans la mémoire de votre téléphone</strong> :
+      </p>
+      <ul>
+        <li>
+          votre avancement mot par mot (nombre de révisions, date de la prochaine révision, statut
+          « en cours » / « maîtrisé » / « à revoir ») ;
+        </li>
+        <li>
+          vos réglages (taille des sessions, affichage de la translittération et des harakat,
+          apparence claire ou sombre, objectif quotidien, heure du rappel) ;
+        </li>
+        <li>
+          vos points d'expérience, votre série de jours consécutifs, et la date de la dernière
+          invitation à noter l'application.
+        </li>
+      </ul>
+      <p>
+        Ces informations ne quittent jamais votre appareil. Elles ne transitent par aucun serveur, y
+        compris le nôtre — nous n'en avons pas.
+      </p>
+      <div class="callout">
+        <p><strong>Deux conséquences à connaître :</strong></p>
+        <ul>
+          <li>
+            Si vous désinstallez l'application, ces données sont effacées avec elle et
+            <strong>ne peuvent pas être récupérées</strong>.
+          </li>
+          <li>
+            Si vous avez activé les sauvegardes de votre téléphone (iCloud sur iPhone, sauvegarde
+            Google sur Android), elles peuvent être incluses dans <strong>votre</strong> sauvegarde
+            personnelle, selon les réglages de votre système. Cette sauvegarde vous appartient et
+            est régie par la politique de confidentialité d'Apple ou de Google, pas par la nôtre.
+          </li>
+        </ul>
+      </div>
+      <p>
+        Le bouton « Effacer ma progression » des Réglages supprime immédiatement et définitivement
+        ces données de votre appareil.
+      </p>
+
+      <h2>3. Les autorisations demandées</h2>
+      <p>
+        Une seule : les <strong>notifications</strong>, et uniquement pour le rappel quotidien de
+        révision.
+      </p>
+      <p>
+        Ce rappel est programmé <strong>localement</strong>, par votre téléphone. Aucune
+        notification n'est envoyée depuis un serveur, ce qui signifie qu'aucun jeton de notification
+        n'est créé ni transmis à qui que ce soit. Vous pouvez refuser cette autorisation ou la
+        retirer à tout moment dans les réglages de votre téléphone : l'application continue de
+        fonctionner à l'identique, sans le rappel.
+      </p>
+      <p>
+        L'application ne demande <strong>jamais</strong> l'accès à votre position, votre appareil
+        photo, votre microphone, vos contacts, vos photos, votre calendrier, ni à aucune autre
+        donnée de votre appareil.
+      </p>
+
+      <h2>4. Les liens vers l'extérieur</h2>
+      <p>
+        L'application contient un <strong>lien de don PayPal</strong>, dans les Réglages et sur
+        l'accueil. Le toucher ouvre PayPal dans le navigateur de votre téléphone.
+      </p>
+      <ul>
+        <li>
+          Ce lien ne transmet aucune information vous concernant : c'est une adresse publique,
+          identique pour tout le monde.
+        </li>
+        <li>
+          À partir du moment où PayPal s'ouvre, c'est la
+          <a href="https://www.paypal.com/fr/webapps/mpp/ua/privacy-full"
+            >politique de confidentialité de PayPal</a
+          >
+          qui s'applique, et non celle-ci.
+        </li>
+        <li>
+          Le don est <strong>facultatif</strong> et ne débloque aucune fonctionnalité.
+          L'application est gratuite et le reste, avec ou sans don.
+        </li>
+      </ul>
+
+      <h2>5. Les magasins d'applications</h2>
+      <p>
+        L'application est distribuée par l'App Store d'Apple et Google Play. Ces plateformes
+        collectent leurs propres données (téléchargements, plantages, statistiques d'usage) selon
+        leurs propres règles, sur lesquelles nous n'avons aucune prise.
+      </p>
+      <p>
+        Si vous avez accepté de partager ces informations avec les développeurs dans les réglages de
+        votre téléphone, nous pouvons recevoir d'Apple ou de Google des statistiques
+        <strong>agrégées et anonymes</strong> (nombre d'installations, rapports de plantage). Elles
+        ne permettent d'identifier personne et nous ne recevons rien d'autre.
+      </p>
+      <p>
+        L'invitation occasionnelle à noter l'application est affichée par le système d'exploitation
+        lui-même : nous ne savons pas si vous y avez répondu, ni ce que vous avez répondu.
+      </p>
+
+      <h2>6. Les enfants</h2>
+      <p>
+        L'application convient à tous les âges. Comme elle ne collecte aucune donnée, elle n'en
+        collecte pas davantage auprès des mineurs. Aucune donnée d'enfant de moins de 13 ans (ou de
+        moins de 16 ans dans l'Union européenne) n'est recueillie, puisqu'aucune donnée ne l'est.
+      </p>
+
+      <h2>7. Vos droits</h2>
+      <p>
+        Le RGPD vous donne un droit d'accès, de rectification, d'effacement et de portabilité de vos
+        données personnelles. Dans le cas de Jadr, ces droits s'exercent
+        <strong>directement depuis votre téléphone</strong>, sans passer par nous : les seules
+        données existantes sont sur votre appareil, sous votre contrôle exclusif. Nous ne détenons
+        aucune copie que nous pourrions vous transmettre ou effacer à votre demande.
+      </p>
+
+      <h2>8. Modifications de cette politique</h2>
+      <p>
+        Si l'application évolue au point de changer ce qui est décrit ici — par exemple si des
+        comptes ou une synchronisation étaient ajoutés un jour —, cette politique sera mise à jour
+        avant la mise en ligne de la version concernée, et la date en haut de page changera.
+      </p>
+
+      <h2>9. Contact</h2>
+      <div class="callout">
+        <p>Pour toute question sur cette politique :</p>
+        <p><a href="mailto:bilaly.cissokho21@gmail.com">bilaly.cissokho21@gmail.com</a></p>
+      </div>
+
+      <hr class="rule" />
+      <footer>
+        <p>
+          Pour une question sur l'application elle-même — un problème technique, une erreur de
+          traduction, une suggestion — voir la
+          <a href="./support.html">page d'aide et contact</a>.
+        </p>
+      </footer>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Jadr. Tous droits réservés.</p>
-        <p><a href="support.html">Aide et contact</a></p>
-    </footer>
-</body>
-</html>
-- Si vous avez activé les sauvegardes de votre téléphone (iCloud sur iPhone,
-  sauvegarde Google sur Android), elles peuvent être incluses dans **votre**
-  sauvegarde personnelle, selon les réglages de votre système. Cette sauvegarde
-  vous appartient et est régie par la politique de confidentialité d'Apple ou
-  de Google, pas par la nôtre.
-
-Le bouton « Effacer ma progression » des Réglages supprime immédiatement et
-définitivement ces données de votre appareil.
-
-## 3. Les autorisations demandées
-
-Une seule : les **notifications**, et uniquement pour le rappel quotidien de
-révision.
-
-Ce rappel est programmé **localement**, par votre téléphone. Aucune notification
-n'est envoyée depuis un serveur, ce qui signifie qu'aucun jeton de notification
-n'est créé ni transmis à qui que ce soit. Vous pouvez refuser cette autorisation
-ou la retirer à tout moment dans les réglages de votre téléphone : l'application
-continue de fonctionner à l'identique, sans le rappel.
-
-L'application ne demande **jamais** l'accès à votre position, votre appareil
-photo, votre microphone, vos contacts, vos photos, votre calendrier, ni à
-aucune autre donnée de votre appareil.
-
-## 4. Les liens vers l'extérieur
-
-L'application contient un **lien de don PayPal**, dans les Réglages et sur
-l'accueil. Le toucher ouvre PayPal dans le navigateur de votre téléphone.
-
-- Ce lien ne transmet aucune information vous concernant : c'est une adresse
-  publique, identique pour tout le monde.
-- À partir du moment où PayPal s'ouvre, c'est la [politique de confidentialité
-  de PayPal](https://www.paypal.com/fr/webapps/mpp/ua/privacy-full) qui
-  s'applique, et non celle-ci.
-- Le don est **facultatif** et ne débloque aucune fonctionnalité. L'application
-  est gratuite et le reste, avec ou sans don.
-
-## 5. Les magasins d'applications
-
-L'application est distribuée par l'App Store d'Apple et Google Play. Ces
-plateformes collectent leurs propres données (téléchargements, plantages,
-statistiques d'usage) selon leurs propres règles, sur lesquelles nous n'avons
-aucune prise.
-
-Si vous avez accepté de partager ces informations avec les développeurs dans les
-réglages de votre téléphone, nous pouvons recevoir d'Apple ou de Google des
-statistiques **agrégées et anonymes** (nombre d'installations, rapports de
-plantage). Elles ne permettent d'identifier personne et nous ne recevons rien
-d'autre.
-
-L'invitation occasionnelle à noter l'application est affichée par le système
-d'exploitation lui-même : nous ne savons pas si vous y avez répondu, ni ce que
-vous avez répondu.
-
-## 6. Les enfants
-
-L'application convient à tous les âges. Comme elle ne collecte aucune donnée,
-elle n'en collecte pas davantage auprès des mineurs. Aucune donnée d'enfant de
-moins de 13 ans (ou de moins de 16 ans dans l'Union européenne) n'est recueillie,
-puisqu'aucune donnée ne l'est.
-
-## 7. Vos droits
-
-Le RGPD vous donne un droit d'accès, de rectification, d'effacement et de
-portabilité de vos données personnelles. Dans le cas de Jadr, ces droits
-s'exercent **directement depuis votre téléphone**, sans passer par nous : les
-seules données existantes sont sur votre appareil, sous votre contrôle exclusif.
-Nous ne détenons aucune copie que nous pourrions vous transmettre ou effacer à
-votre demande.
-
-## 8. Modifications de cette politique
-
-Si l'application évolue au point de changer ce qui est décrit ici — par exemple
-si des comptes ou une synchronisation étaient ajoutés un jour —, cette politique
-sera mise à jour avant la mise en ligne de la version concernée, et la date en
-haut de page changera.
-
-## 9. Contact
-
-Pour toute question sur cette politique : **bilaly.cissokho21@gmail.com**
-
----
-
-# Annexe — pour la publication (ne fait pas partie de la politique)
-
-Cette annexe reste dans le dépôt ; elle n'a pas à figurer sur la page publiée.
-
-## Où publier ce texte
-
-Les deux magasins exigent une **URL publique** accessible sans authentification,
-et refusent un lien vers un fichier de dépôt privé. La voie la plus simple sans
-serveur est GitHub Pages : publier ce fichier en HTML sur
-`https://<compte>.github.io/jadr/privacy`, puis coller ce lien dans :
-
-- **App Store Connect** → Informations sur l'app → *Politique de confidentialité*
-  (obligatoire pour toute nouvelle app) ;
-- **Google Play Console** → Contenu de l'application → *Politique de
-  confidentialité* (obligatoire, vérifiée automatiquement).
-
-La page doit rester en ligne aussi longtemps que l'application est distribuée :
-un lien mort est un motif de retrait.
-
-## Ce qu'il faut déclarer dans les questionnaires
-
-Ces deux formulaires sont distincts de la politique et leurs réponses doivent
-lui correspondre exactement — une divergence est un motif de rejet fréquent.
-
-**App Store, « App Privacy »** : répondre **« Non, nous ne collectons aucune
-donnée de cette app »**. C'est ce qui affiche l'étiquette *Aucune donnée
-collectée* sur la fiche. Aucune déclaration de suivi (*tracking*) n'est requise,
-et aucune invite ATT ne doit être ajoutée.
-
-**Google Play, « Sécurité des données »** :
-
-| Question | Réponse |
-|---|---|
-| Collecte ou partage de données ? | Non |
-| Données chiffrées en transit ? | Sans objet (aucune transmission) |
-| L'utilisateur peut-il demander la suppression ? | Oui — depuis l'app (« Effacer ma progression ») |
-
-**Ce qui invaliderait ces réponses** : ajouter un SDK d'analyse ou de publicité,
-un service de rapport de plantage tiers (Sentry, Crashlytics), des notifications
-poussées depuis un serveur, ou la synchronisation Supabase prévue en post-MVP.
-Chacun de ces ajouts oblige à réécrire les sections 1 à 3 **et** à refaire les
-deux questionnaires avant la soumission suivante.
-
-## À vérifier avant publication
-
-- [ ] Choisir l'adresse de contact : `bilaly.cissokho21@gmail.com` est une
-      adresse personnelle, et elle sera publique sur les deux fiches.
-- [ ] Décider si une version anglaise est nécessaire (l'app est en français et
-      cible un public francophone ; Apple accepte une politique dans la langue
-      de la fiche).
-
-</body>
+  </body>
 </html>
